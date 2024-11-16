@@ -21,8 +21,9 @@ export default function Header({ currentPage, handlePageChange }) {
           </div>
         </div>
 
-        <div>
+        <div id="header-nav">
           <a
+            id="work"
             href="#work"
             onClick={() => handlePageChange("Work")}
             className={currentPage === "Work" ? "h1active" : ""}
@@ -31,6 +32,7 @@ export default function Header({ currentPage, handlePageChange }) {
           </a>
 
           <a
+            id="resume"
             href="#resume"
             onClick={() => handlePageChange("Resume")}
             className={currentPage === "Resume" ? "h1active" : ""}
@@ -39,6 +41,7 @@ export default function Header({ currentPage, handlePageChange }) {
           </a>
 
           <a
+            id="about"
             href="#about"
             onClick={() => handlePageChange("About")}
             className={currentPage === "About" ? "h1active" : ""}
@@ -47,6 +50,7 @@ export default function Header({ currentPage, handlePageChange }) {
           </a>
 
           <a
+            id="contact"
             href="#contact"
             onClick={() => handlePageChange("Contact")}
             className={currentPage === "Contact" ? "h1active" : ""}

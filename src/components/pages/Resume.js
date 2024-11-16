@@ -13,7 +13,7 @@ export default function Resume() {
   const valencia = require("../../assets/images/logos/valencia.png");
 
   return (
-    <div id="resume">
+    <div id="resume-page">
       <section className="experience">
         <div className="centerTitle">
           <h1>EXPERIENCE</h1>

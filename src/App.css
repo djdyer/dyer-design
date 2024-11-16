@@ -13,10 +13,47 @@
   --light: rgb(79, 181, 221);
 }
 
+/* Reset styling */
+html,
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background: transparent;
+  height: 100%;
+}
+
+/* Page container */
+#page {
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+/* Background images with aspect ratio */
+#header-back,
+#footer-back {
+  position: absolute;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Automatically adjusts height based on aspect ratio */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Header background */
+#header-back {
+  top: 0;
+  background-image: url("./assets/images/header-footer/header_background.png");
+  aspect-ratio: 16 / 9; /* Set the aspect ratio (e.g., 16:9 or 4:3) */
+}
+
+/* Footer background */
+#footer-back {
+  bottom: 0;
+  background-image: url("./assets/images/header-footer/footer_background.png");
+  aspect-ratio: 16 / 9; /* Match the image's actual aspect ratio */
 }
 
 /* NAVIGATION */
@@ -35,7 +72,7 @@ nav {
 }
 
 h1 {
-  font-family: teko;
+  font-family: teko, sans-serif;
   font-size: 32pt;
   line-height: 32pt;
   margin: 0px;
@@ -45,7 +82,7 @@ h1 {
 /* LINKS */
 header a h1 {
   width: 100px;
-  font-family: teko;
+  font-family: teko, sans-serif;
   display: inline;
   font-size: 22pt;
   line-height: 0%;
@@ -58,10 +95,6 @@ header a h1 {
 .h1active h1,
 nav a h1:hover {
   color: var(--light);
-  background-color: var(--dark);
-  padding: 3px 20px 0px 20px;
-  border-radius: 10px;
-  border: 2px solid var(--light);
   transition: ease;
 }
 
@@ -75,9 +108,8 @@ a {
 }
 
 .hero {
-  background-image: url(/public/assets/header_background.png);
   width: 100%;
-  height: 500px;
+  height: fit-content;
   background-size: cover;
   justify-content: center;
   background-position-y: top;
@@ -93,6 +125,7 @@ a {
   display: flex;
   justify-items: space-around;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #logolockup div {
@@ -100,15 +133,17 @@ a {
 }
 
 #name {
-  background: -webkit-linear-gradient(rgb(87, 191, 247), rgb(65, 181, 234));
+  background: -webkit-linear-gradient(rgb(70, 167, 220), rgb(51, 156, 205));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0px;
 }
 
 #name2 {
-  background: -webkit-linear-gradient(rgb(41, 110, 184), rgb(15, 63, 112));
+  background: -webkit-linear-gradient(rgb(59, 96, 133), rgb(15, 63, 112));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0px;
   margin-top: -10px;
@@ -122,7 +157,6 @@ a {
 }
 
 .flexprofile {
-  margin-top: -320px;
   display: flex;
   width: 80%;
   padding: 0px;
@@ -134,7 +168,7 @@ p {
   display: flex;
   flex-direction: column;
   color: rgb(114, 114, 114);
-  font-family: teko;
+  font-family: teko, sans-serif;
   font-size: 14pt;
   font-weight: 500;
   padding: 25px 25px 0 25px;
@@ -153,7 +187,7 @@ p {
 /* Button */
 .readMore,
 .send {
-  font-family: teko;
+  font-family: teko, sans-serif;
   letter-spacing: 3px;
   font-size: 20pt;
   color: white;
@@ -167,6 +201,7 @@ p {
 
 .send {
   padding: 3px 40px 0px 40px;
+  align-self: center;
 }
 
 .readMore:hover,
@@ -175,16 +210,12 @@ p {
   box-shadow: 0px 1px 5px rgb(209, 207, 207);
 }
 
-.send {
-  align-self: center;
-}
-
 .send:hover {
   box-shadow: 0px 1px 5px rgb(44, 44, 84);
 }
 
-/* All work experience + all education */
-section {
+/* RESUME */
+#resume-page {
   box-sizing: border-box;
   display: inline-flex;
   background-color: rgb(252, 252, 252);
@@ -197,46 +228,33 @@ section {
 }
 
 .work-grid {
-  margin-top: -320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-article {
-  display: block;
-  margin: 30px;
-}
-
-/* work labels */
-h3 {
-  font-family: "Work Sans", sans-serif;
+/* Work */
+.work h3 {
+  font-family: Tungsten, sans-serif;
   text-align: left;
-  font-size: 18pt;
+  font-size: 26px;
+  line-height: 26px;
   color: var(--light);
-  align-self: center;
-  margin-right: 25px;
-  margin-top: 3px;
-  margin-bottom: 5px;
+  margin: 10px 20px 10px 5px;
 }
 
-h3:hover {
+.work h3:hover {
   color: white;
 }
 
 .label {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: var(--dark);
   padding: 10px;
-  width: max-content;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-
-.label:hover {
-  border-right: 10px solid var(--light);
-  border-bottom: 10px solid var(--light);
+  width: fit-content;
+  height: 40px;
 }
 
 .git_link {
@@ -257,22 +275,23 @@ a:hover img.default {
   display: none;
 }
 
-.work1,
-.work2,
-.work3,
-.work4,
-.work5,
-.work6 {
-  background-image: url(./assets/images/work-thumbs/fly_app.jpg);
+article {
+  display: block;
+  margin: 30px;
   height: 300px;
   max-width: 500px;
   flex-basis: 50%;
   flex-grow: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
+  border: 3px solid var(--dark);
+  box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+}
+
+.work1 {
+  background-image: url(./assets/images/work-thumbs/fly_app.jpg);
 }
 
 .work2 {
@@ -287,21 +306,8 @@ a:hover img.default {
   background-image: url(./assets/images/work-thumbs/pokego_home.png);
 }
 
-.work5 {
-  background-image: url(./assets/images/work-thumbs/rainorshine_day.png);
-}
-
-.work6 {
-  background-image: url(./assets/images/work-thumbs/code_quiz.jpg);
-}
-
-.work1:hover,
-.work2:hover,
-.work3:hover,
-.work4:hover,
-.work5:hover,
-.work6:hover {
-  border: 10px solid var(--light);
+article:hover {
+  border: 3px solid var(--light);
   background-color: var(--light);
   color: var(--dark);
   filter: drop-shadow(0 0 0);
@@ -314,6 +320,7 @@ a:hover img.default {
   display: flex;
   flex-direction: column;
   padding: 40px 25px;
+  margin-top: 70px;
 }
 
 .centerTitle {
@@ -323,10 +330,6 @@ a:hover img.default {
 
 .centerTitle h1 {
   color: var(--dark);
-}
-
-#resume {
-  margin-top: -320px;
 }
 
 .resumeBtn {
@@ -340,7 +343,7 @@ button {
 
 /* job titles, companies and schools */
 h2 {
-  font-family: tungsten;
+  font-family: tungsten, sans-serif;
   letter-spacing: 3px;
   font-size: 21pt;
   font-weight: 900;
@@ -369,7 +372,7 @@ h4 {
 li,
 ul,
 h5 {
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-weight: 100;
   font-size: 14px;
   padding: 3px 5px 3px 0;
@@ -416,10 +419,9 @@ table {
 
 /* table headers */
 th {
-  font-family: tungsten;
+  font-family: tungsten, sans-serif;
   letter-spacing: 3px;
   font-size: 21pt;
-  text-align: left;
   padding: 15px;
   text-align: center;
   border: 1px solid rgb(69, 196, 255);
@@ -432,7 +434,7 @@ th:hover {
 
 #tableheader {
   color: white;
-  font-family: paralucent;
+  font-family: paralucent, sans-serif;
   font-size: 23px;
   font-weight: 900;
   background-color: var(--dark);
@@ -443,7 +445,7 @@ th:hover {
 td {
   border: 1px solid rgb(69, 196, 255);
   border-collapse: collapse;
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-weight: 100;
   font-size: 14px;
   padding: 10px;
@@ -456,11 +458,6 @@ td:hover {
 }
 
 /* Contact form */
-
-#contact-form {
-  margin-top: -320px;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -508,15 +505,13 @@ footer {
   text-align: center;
   height: 300px;
   width: 100%;
-  background-image: url(/public/assets/footer_background.png);
-  background-size: cover;
   z-index: 1;
 }
 
 footer a {
-  color: var(--light);
+  color: var(--dark);
   text-decoration: none;
-  font-family: teko;
+  font-family: teko, sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
 }
@@ -533,37 +528,8 @@ footer a {
   filter: drop-shadow(0 2px 6px var(--light));
 }
 
-/* footer copyright text */
-h6 {
-  font-family: paralucent;
-  font-size: 10pt;
-  letter-spacing: 0.1em;
-  font-weight: 900;
-  color: var(--dark);
-  text-align: center;
-}
-
-footer h6 a:hover {
-  color: var(--dark);
-}
-
-@media screen and (max-width: 1300px) {
-  nav {
-    flex-direction: column;
-    justify-items: center;
-  }
-
-  .hero {
-    margin-bottom: 50px;
-  }
-
-  .flexgrid {
-    flex-direction: column;
-  }
-
-  .label {
-    width: max-content !important;
-  }
+footer a:hover {
+  color: var(--light);
 }
 
 p.error-text {
@@ -571,20 +537,23 @@ p.error-text {
   margin-top: 0;
 }
 
-@media screen and (max-width: 900px) {
-  #logolockup {
-    display: flex;
+@media screen and (max-width: 1300px) {
+  nav {
     flex-direction: column;
-    justify-items: space-around;
-    align-items: center;
+    justify-items: center;
+    margin: 0px;
   }
 
-  header a {
-    font-size: 18pt;
-    display: block;
-    margin: 20px;
+  .hero {
+    margin-bottom: 20px;
   }
 
+  .flexgrid {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .flexprofile {
     flex-direction: column;
     align-items: center;
@@ -618,13 +587,9 @@ p.error-text {
   .work1,
   .work2,
   .work3,
-  .work4,
-  .work5,
-  .work6 {
-    width: 90%;
+  .work4 {
+    width: -webkit-fill-available;
     min-height: 300px;
-    justify-items: center;
-    margin: 20px 15px;
   }
 
   .flexwork {
@@ -664,13 +629,8 @@ p.error-text {
     justify-content: space-around;
   }
 
-  #logo {
-    margin: 10px 0 0 20px;
-  }
-
-  section {
-    width: 80%;
-    padding: 20px;
+  article {
+    margin: 30px 20px 10px 20px;
   }
 
   .flexwork {
