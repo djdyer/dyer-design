@@ -5,7 +5,7 @@ export default function Work() {
   const githubHover = require("../../assets/images/social-icons/github_hover.png");
 
   return (
-    <div className="work">
+    <div id="work-page">
       <section className="work-grid">
         <article className="work1">
           <div className="label">

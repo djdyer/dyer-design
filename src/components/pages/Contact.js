@@ -63,8 +63,8 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact-form">
-      <section className="contact">
+    <div id="contact-page">
+      <section id="contact-form">
         <div className="centerTitle">
           <h1>CONTACT</h1>
         </div>

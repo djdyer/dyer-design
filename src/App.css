@@ -18,17 +18,18 @@ body {
   margin: 0;
   padding: 0;
   background: transparent;
-  height: fit-content;
+  height: 100vh !important;
 }
 
 #page {
   position: relative;
   z-index: 0;
+  height: 100vh;
 }
 
 #header-back,
 #footer-back {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100vw;
   background-size: cover;
@@ -36,35 +37,63 @@ body {
   z-index: -1;
 }
 
+#site-body {
+  position: relative;
+  z-index: 2;
+}
+
 #header-back {
   display: inline-block;
   top: 0;
-  height: 500px !important;
+  height: 400px !important;
   background-image: url("./assets/images/header-footer/header_background.png");
-  aspect-ratio: 9 / 15;
   background-position: bottom;
+  z-index: 0;
 }
 
 #footer-back {
   bottom: 0 !important;
+  height: 500px !important;
   background-image: url("./assets/images/header-footer/footer_background.png");
-  aspect-ratio: 16 / 7;
   background-position: top;
+  z-index: -1;
+}
+
+#work-page,
+#resume-page,
+#about-page,
+#contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
 /* NAVIGATION */
 header {
   width: 100vw;
   padding-top: 30px;
+  height: fit-content;
+  background-size: cover;
+  justify-content: center;
+  background-position-y: top;
+  z-index: -1;
 }
 
 nav {
-  margin: 0px 10%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+}
+
+#header {
+  width: 80%;
+  margin: auto;
 }
 
 h1 {
@@ -103,15 +132,6 @@ a {
   text-decoration: none !important;
 }
 
-.hero {
-  width: 100%;
-  height: fit-content;
-  background-size: cover;
-  justify-content: center;
-  background-position-y: top;
-  z-index: -1;
-}
-
 #logo {
   max-width: 140px;
   max-height: auto;
@@ -145,14 +165,15 @@ a {
   margin-top: -10px;
 }
 
+/* WORK */
 .work-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
-/* Work */
-.work h3 {
+#work-page h3 {
   font-family: Tungsten, sans-serif;
   letter-spacing: 3px;
   text-align: left;
@@ -162,7 +183,7 @@ a {
   margin: 10px;
 }
 
-.work h3:hover {
+#work-page h3:hover {
   color: white;
 }
 
@@ -234,29 +255,21 @@ article:hover {
 }
 
 /* RESUME PAGE */
-#resume-page {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .experience-item {
   width: 80%;
   margin: auto;
 }
 
-.experience,
-.education,
-.tools,
-.contact {
-  width: 80%;
+#resume-experience,
+#resume-education,
+#tools,
+#resume-contact {
   display: flex;
   flex-direction: column;
   padding: 25px;
   margin: 30px auto;
-  border-radius: 20px;
   background-color: white;
-  border: 2px solid rgb(69, 196, 255);
+  border: 2px solid var(--dark);
 }
 
 .centerTitle {
@@ -370,7 +383,7 @@ th:hover {
 }
 
 td {
-  border: 1px solid rgb(69, 196, 255);
+  border: 1px solid var(--light);
   border-collapse: collapse;
   font-family: futura, sans-serif;
   font-weight: 100;
@@ -384,21 +397,20 @@ td:hover {
   color: var(--light);
 }
 
+/* ABOUT */
 #headshot {
   display: block;
   width: auto;
-  height: 620px;
-  border-radius: 18px 0 0 18px;
+  height: 500px;
 }
 
 .flexprofile {
   display: flex;
-  width: 80%;
   padding: 0px;
-  background-color: rgb(244, 244, 244);
+  background-color: white;
+  border: 2px solid var(--dark);
 }
 
-/* ABOUT */
 p {
   display: flex;
   flex-direction: column;
@@ -428,7 +440,7 @@ p {
   border-radius: 20px;
   border: none;
   background-color: var(--light);
-  margin: 30px 15px 10px 0;
+  margin: 25px 0px;
   width: fit-content;
 }
 
@@ -448,19 +460,23 @@ p {
 }
 
 /* CONTACT */
-form {
+#contact-form {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
   background-color: var(--dark);
   height: auto;
-  width: 60%;
   padding: 40px;
-  margin: 35px auto;
+  margin: auto;
+  margin-top: 30px;
 }
 
-#contactflex {
+#contact-form h1 {
+  color: white;
+}
+
+#footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -526,6 +542,39 @@ p.error-text {
   margin-top: 0;
 }
 
+@media screen and (min-width: 2200px) {
+  #work-page,
+  #header {
+    width: 50%;
+  }
+
+  #resume-page {
+    width: 40%;
+  }
+
+  article {
+    height: 400px;
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #header,
+  #work-page,
+  #resume-page,
+  #about-page {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #header,
+  #work-page,
+  #about-page {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   nav {
     flex-direction: column;
@@ -533,16 +582,14 @@ p.error-text {
     margin: 0px;
   }
 
-  .hero {
-    margin-bottom: 20px;
-  }
-
   .flexgrid {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 900px) {
+  #about-page {
+    width: 50%;
+  }
+
   .flexprofile {
     flex-direction: column;
     align-items: center;
@@ -551,13 +598,19 @@ p.error-text {
   #headshot {
     width: 100%;
     height: auto;
-    border-radius: 18px 18px 0 0;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #resume-page,
+  #about-page,
+  #contact-page {
+    width: 90%;
   }
 
   p {
     font-size: 12pt;
-    margin: 15px;
   }
 
   #readMore {
@@ -587,7 +640,6 @@ p.error-text {
 
   .work-grid {
     flex-direction: column;
-    width: 100%;
     justify-content: space-around;
     align-content: center;
   }
@@ -613,13 +665,12 @@ p.error-text {
 
 @media screen and (max-width: 501px) {
   header {
-    height: 400px;
     flex-direction: column;
     justify-content: space-around;
   }
 
   article {
-    margin: 30px 20px 10px 20px;
+    margin: 30px 0px 10px 0px;
   }
 
   .flexwork {

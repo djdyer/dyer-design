@@ -14,7 +14,7 @@ export default function Resume() {
 
   return (
     <div id="resume-page">
-      <section className="experience">
+      <section id="resume-experience">
         <div className="centerTitle">
           <h1>EXPERIENCE</h1>
           <a
@@ -150,7 +150,7 @@ export default function Resume() {
       </section>
 
       {/* <!-- All Education --> */}
-      <section className="education">
+      <section id="resume-education">
         <div className="centerTitle">
           <h1>EDUCATION</h1>
         </div>
@@ -194,7 +194,7 @@ export default function Resume() {
       </section>
 
       {/* <!-- All Tools Table --> */}
-      <section className="tools">
+      <section id="resume-tools">
         <div className="centerTitle">
           <h1>TOOLS</h1>
         </div>

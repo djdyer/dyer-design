@@ -5,7 +5,7 @@ export default function About() {
   const headshot = require("../../assets/resume/casual_headshot.jpg");
 
   return (
-    <div>
+    <div id="about-page">
       <section className="flexprofile">
         <img id="headshot" src={headshot} alt="Headshot" />
         <div>
@@ -45,11 +45,10 @@ export default function About() {
               Internship Program for summer 2021.
               <br />
               <br />
-              Enter COVID. I have relocated once again, now residing just
-              outside of Atlanta GA. Lately, you can find me offering freelance
-              design services while enrolled at GA Tech coding bootcamp for the
-              fall term, putting all the pieces together. Reach out, get in
-              touch, and let's build something cool!
+              Enter COVID. I have relocated to ATL and completed a full stack
+              coding Bootcamp at GA Tech as of early '22. Now you can find me
+              handing UX Design and Front-end Web Development at Response Media.
+              Reach out, get in touch, and let's build something cool!
             </span>
             <button className="readMore" onClick={helper}>
               READ MORE

@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <div>
-      <footer id="contactflex">
+      <footer id="footer">
         {/* <!-- Social Icons --> */}
         <div id="socials">
           <a href="mailto:david@dyer.design">
