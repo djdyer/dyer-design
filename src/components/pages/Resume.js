@@ -26,7 +26,7 @@ export default function Resume() {
           </a>
         </div>
 
-        <article>
+        <div className="experience-item">
           <h2>UX/UI DESIGN INTERN // PEPPER SQUARE</h2>
           <h4>2021</h4>
           <div className="flexwork">
@@ -50,9 +50,9 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-        </article>
+        </div>
 
-        <article>
+        <div className="experience-item">
           <h2>FREELANCE UX DESIGNER // 530 MEDIA LAB</h2>
           <h4>2020-2021</h4>
           <div className="flexwork">
@@ -72,9 +72,9 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-        </article>
+        </div>
 
-        <article>
+        <div className="experience-item">
           <h2>ECOMMERCE OPERATIONS MANAGER // OAKLANDISH</h2>
           <h4>2018-2020</h4>
           <div className="flexwork">
@@ -92,9 +92,9 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-        </article>
+        </div>
 
-        <article>
+        <div className="experience-item">
           <h2>E-COMMERCE SALES MANAGER // THE HUNDREDS</h2>
           <h4>2009-2017</h4>
           <div className="flexwork">
@@ -117,9 +117,9 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-        </article>
+        </div>
 
-        <article>
+        <div className="experience-item">
           <h2>
             CO-FOUNDER / CREATIVE DIRECTOR //
             <strong>PRESTIGE MUSIC GROUP</strong>
@@ -146,7 +146,7 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-        </article>
+        </div>
       </section>
 
       {/* <!-- All Education --> */}
@@ -155,41 +155,41 @@ export default function Resume() {
           <h1>EDUCATION</h1>
         </div>
         <div className="flexgrid">
-          <article className="flexschool">
+          <div className="flexschool">
             <img className="logos" src={gaTech} alt="GA Tech Logo" />
             <ul>
               <h2>GA INSTITUTE OF TECHNOLOGY</h2>
               <h4>2022</h4>
               <h5>Full Stack Web Dev - The Bootcamp Spot</h5>
             </ul>
-          </article>
+          </div>
 
-          <article className="flexschool">
+          <div className="flexschool">
             <img className="logos" src={ucb} alt="UCBerkeley Logo" />
             <ul>
               <h2>UC BERKELEY EXT.</h2>
               <h4>2020</h4>
               <h5>Professional Certification in UX Design</h5>
             </ul>
-          </article>
+          </div>
 
-          <article className="flexschool">
+          <div className="flexschool">
             <img className="logos" src={ucf} alt="UCF Logo" />
             <ul>
               <h2>UNIVERSITY OF CENTRAL FLORIDA</h2>
               <h4>2007</h4>
               <h5>BA Entrepreneurial Management</h5>
             </ul>
-          </article>
+          </div>
 
-          <article className="flexschool">
+          <div className="flexschool">
             <img className="logos" src={valencia} alt="Valencia College Logo" />
             <ul>
               <h2>VALENCIA COLLEGE</h2>
               <h4>2004</h4>
               <h5>AA / Digital Video Production</h5>
             </ul>
-          </article>
+          </div>
         </div>
       </section>
 

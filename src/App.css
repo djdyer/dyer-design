@@ -13,47 +13,43 @@
   --light: rgb(79, 181, 221);
 }
 
-/* Reset styling */
 html,
 body {
   margin: 0;
   padding: 0;
   background: transparent;
-  height: 100%;
+  height: fit-content;
 }
 
-/* Page container */
 #page {
   position: relative;
-  min-height: 100vh;
   z-index: 0;
 }
 
-/* Background images with aspect ratio */
 #header-back,
 #footer-back {
   position: absolute;
   left: 0;
-  width: 100vw; /* Full viewport width */
-  height: auto; /* Automatically adjusts height based on aspect ratio */
+  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   z-index: -1;
 }
 
-/* Header background */
 #header-back {
+  display: inline-block;
   top: 0;
+  height: 500px !important;
   background-image: url("./assets/images/header-footer/header_background.png");
-  aspect-ratio: 16 / 9; /* Set the aspect ratio (e.g., 16:9 or 4:3) */
+  aspect-ratio: 9 / 15;
+  background-position: bottom;
 }
 
-/* Footer background */
 #footer-back {
-  bottom: 0;
+  bottom: 0 !important;
   background-image: url("./assets/images/header-footer/footer_background.png");
-  aspect-ratio: 16 / 9; /* Match the image's actual aspect ratio */
+  aspect-ratio: 16 / 7;
+  background-position: top;
 }
 
 /* NAVIGATION */
@@ -94,12 +90,12 @@ header a h1 {
 
 .h1active h1,
 nav a h1:hover {
-  color: var(--light);
+  color: white;
   transition: ease;
 }
 
 .h1:active {
-  color: var(--light);
+  color: white;
 }
 
 a {
@@ -149,6 +145,245 @@ a {
   margin-top: -10px;
 }
 
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Work */
+.work h3 {
+  font-family: Tungsten, sans-serif;
+  letter-spacing: 3px;
+  text-align: left;
+  font-size: 26px;
+  line-height: 26px;
+  color: var(--light);
+  margin: 10px;
+}
+
+.work h3:hover {
+  color: white;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--dark);
+  padding: 5px;
+  width: fit-content;
+  height: 40px;
+}
+
+.git_link {
+  width: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+a img.hover {
+  display: none;
+}
+a img.default {
+  display: inherit;
+}
+a:hover img.hover {
+  display: inherit;
+}
+a:hover img.default {
+  display: none;
+}
+
+article {
+  display: block;
+  margin: 30px;
+  height: 300px;
+  max-width: 500px;
+  flex-basis: 50%;
+  flex-grow: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid var(--dark);
+  box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+}
+
+.work1 {
+  background-image: url(./assets/images/work-thumbs/fly-app.png);
+}
+
+.work2 {
+  background-image: url(./assets/images/work-thumbs/response-media.png);
+}
+
+.work3 {
+  background-image: url(./assets/images/work-thumbs/tech_bros_home_demo.jpg);
+}
+
+.work4 {
+  background-image: url(./assets/images/work-thumbs/pokego_home.png);
+}
+
+article:hover {
+  border: 3px solid var(--light);
+  background-color: var(--light);
+  color: var(--dark);
+  filter: drop-shadow(0 0 0);
+}
+
+/* RESUME PAGE */
+#resume-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experience-item {
+  width: 80%;
+  margin: auto;
+}
+
+.experience,
+.education,
+.tools,
+.contact {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid rgb(69, 196, 255);
+}
+
+.centerTitle {
+  align-self: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.centerTitle h1 {
+  color: var(--dark);
+}
+
+.resumeBtn {
+  height: 30px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+h2 {
+  font-family: tungsten, sans-serif;
+  letter-spacing: 3px;
+  font-size: 21pt;
+  font-weight: 900;
+  color: rgb(19, 19, 19);
+  margin-bottom: 8px;
+}
+
+h2:hover {
+  color: var(--light);
+}
+
+h4 {
+  font-family: monospace;
+  color: var(--light);
+  margin: 0;
+}
+
+.logos {
+  margin-right: 50px;
+  width: 100px;
+}
+
+li,
+ul,
+h5 {
+  font-family: futura, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 3px 5px 3px 0;
+  color: var(--dark);
+}
+
+h5 {
+  margin-top: 8px;
+}
+
+.flexwork {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.flexschool {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 600px;
+}
+
+.flexgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: left;
+}
+
+table {
+  width: 80%;
+  border: 1px solid rgb(69, 196, 255);
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+th {
+  font-family: tungsten, sans-serif;
+  letter-spacing: 3px;
+  font-size: 21pt;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid rgb(69, 196, 255);
+  border-collapse: collapse;
+}
+
+th:hover {
+  color: var(--light);
+}
+
+#tableheader {
+  color: white;
+  font-family: paralucent, sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  background-color: var(--dark);
+  letter-spacing: 0.1em;
+}
+
+td {
+  border: 1px solid rgb(69, 196, 255);
+  border-collapse: collapse;
+  font-family: futura, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 10px;
+  color: rgb(27, 27, 27);
+  background-color: rgb(244, 244, 244);
+}
+
+td:hover {
+  color: var(--light);
+}
+
 #headshot {
   display: block;
   width: auto;
@@ -163,7 +398,7 @@ a {
   background-color: rgb(244, 244, 244);
 }
 
-/* Bio */
+/* ABOUT */
 p {
   display: flex;
   flex-direction: column;
@@ -179,12 +414,10 @@ p {
   line-height: 98%;
 }
 
-/* Expanded Bio */
 .fullBio {
   display: none;
 }
 
-/* Button */
 .readMore,
 .send {
   font-family: teko, sans-serif;
@@ -214,250 +447,7 @@ p {
   box-shadow: 0px 1px 5px rgb(44, 44, 84);
 }
 
-/* RESUME */
-#resume-page {
-  box-sizing: border-box;
-  display: inline-flex;
-  background-color: rgb(252, 252, 252);
-  width: 80%;
-  border-radius: 20px;
-  margin: 0px auto 40px auto;
-  padding: 40px;
-  border: 2px solid rgb(69, 196, 255);
-  align-items: flex-start;
-}
-
-.work-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Work */
-.work h3 {
-  font-family: Tungsten, sans-serif;
-  text-align: left;
-  font-size: 26px;
-  line-height: 26px;
-  color: var(--light);
-  margin: 10px 20px 10px 5px;
-}
-
-.work h3:hover {
-  color: white;
-}
-
-.label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: var(--dark);
-  padding: 10px;
-  width: fit-content;
-  height: 40px;
-}
-
-.git_link {
-  width: 30px;
-  margin: 0px 10px 0px 5px;
-}
-
-a img.hover {
-  display: none;
-}
-a img.default {
-  display: inherit;
-}
-a:hover img.hover {
-  display: inherit;
-}
-a:hover img.default {
-  display: none;
-}
-
-article {
-  display: block;
-  margin: 30px;
-  height: 300px;
-  max-width: 500px;
-  flex-basis: 50%;
-  flex-grow: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 3px solid var(--dark);
-  box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
-}
-
-.work1 {
-  background-image: url(./assets/images/work-thumbs/fly_app.jpg);
-}
-
-.work2 {
-  background-image: url(./assets/images/work-thumbs/material_trader_mobiles.png);
-}
-
-.work3 {
-  background-image: url(./assets/images/work-thumbs/tech_bros_home_demo.jpg);
-}
-
-.work4 {
-  background-image: url(./assets/images/work-thumbs/pokego_home.png);
-}
-
-article:hover {
-  border: 3px solid var(--light);
-  background-color: var(--light);
-  color: var(--dark);
-  filter: drop-shadow(0 0 0);
-}
-
-.experience,
-.education,
-.tools,
-.contact {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 25px;
-  margin-top: 70px;
-}
-
-.centerTitle {
-  align-self: center;
-  text-align: center;
-}
-
-.centerTitle h1 {
-  color: var(--dark);
-}
-
-.resumeBtn {
-  height: 30px;
-}
-
-button {
-  border: none;
-  background: none;
-}
-
-/* job titles, companies and schools */
-h2 {
-  font-family: tungsten, sans-serif;
-  letter-spacing: 3px;
-  font-size: 21pt;
-  font-weight: 900;
-  color: rgb(19, 19, 19);
-  margin-bottom: 8px;
-}
-
-h2:hover {
-  color: var(--light);
-}
-
-/* dates */
-h4 {
-  font-family: monospace;
-  color: var(--light);
-  margin: 0;
-}
-
-/* All company or school logos */
-.logos {
-  margin-right: 50px;
-  width: 100px;
-}
-
-/* Experience bullet points */
-li,
-ul,
-h5 {
-  font-family: futura, sans-serif;
-  font-weight: 100;
-  font-size: 14px;
-  padding: 3px 5px 3px 0;
-  color: var(--dark);
-}
-
-h5 {
-  margin-top: 8px;
-}
-
-/* Contains company logos alongside list items */
-.flexwork {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-/* Contains school logos alongside credentials */
-.flexschool {
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  width: 600px;
-}
-
-/* Grid for schools only  */
-.flexgrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-content: left;
-}
-
-/* Tools Table */
-table {
-  width: 80%;
-  border: 1px solid rgb(69, 196, 255);
-  border-collapse: collapse;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 35px;
-}
-
-/* table headers */
-th {
-  font-family: tungsten, sans-serif;
-  letter-spacing: 3px;
-  font-size: 21pt;
-  padding: 15px;
-  text-align: center;
-  border: 1px solid rgb(69, 196, 255);
-  border-collapse: collapse;
-}
-
-th:hover {
-  color: var(--light);
-}
-
-#tableheader {
-  color: white;
-  font-family: paralucent, sans-serif;
-  font-size: 23px;
-  font-weight: 900;
-  background-color: var(--dark);
-  letter-spacing: 0.1em;
-}
-
-/* tools list items */
-td {
-  border: 1px solid rgb(69, 196, 255);
-  border-collapse: collapse;
-  font-family: futura, sans-serif;
-  font-weight: 100;
-  font-size: 14px;
-  padding: 10px;
-  color: rgb(27, 27, 27);
-  background-color: rgb(244, 244, 244);
-}
-
-td:hover {
-  color: var(--light);
-}
-
-/* Contact form */
+/* CONTACT */
 form {
   display: flex;
   flex-direction: column;
@@ -476,7 +466,6 @@ form {
   justify-content: center;
 }
 
-/* Input fields */
 input {
   width: 80%;
   margin: 10px auto 10px auto;
@@ -516,7 +505,7 @@ footer a {
   letter-spacing: 2px;
 }
 
-/* Social Icons */
+/* FOOTER */
 .icon {
   width: auto;
   height: 50px;

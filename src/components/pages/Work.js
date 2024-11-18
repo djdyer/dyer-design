@@ -10,7 +10,7 @@ export default function Work() {
         <article className="work1">
           <div className="label">
             <a
-              href="https://github.com/djdyer/fly-app"
+              href="https://github.com/djdyer/fly-app-3.0"
               target="_blank"
               rel="noreferrer"
             >
@@ -26,7 +26,7 @@ export default function Work() {
               />
             </a>
             <a
-              href="http://flyapp.world/"
+              href="https://fly-app-3-0.vercel.app/"
               target="_blank"
               rel="noreferrer"
               alt="Progress Edit"
@@ -39,7 +39,7 @@ export default function Work() {
         <article className="work2">
           <div className="label">
             <a
-              href="https://www.github.com/djdyer/materials-trader"
+              href="https://github.com/brittney092289/miller-dyer-rm"
               target="_blank"
               rel="noreferrer"
             >
@@ -55,12 +55,12 @@ export default function Work() {
               />
             </a>
             <a
-              href="https://materials-trader.herokuapp.com"
+              href="https:/responsemedia.com"
               target="_blank"
               rel="noreferrer"
               alt="Materials Trader"
             >
-              <h3>MATERIALS TRADER</h3>
+              <h3>RESPONSE MEDIA</h3>
             </a>
           </div>
         </article>
