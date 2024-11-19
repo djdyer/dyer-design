@@ -93,15 +93,15 @@ export default function Contact() {
             placeholder="Message"
             id="message"
           />
-          <button type="button" onClick={handleFormSubmit} className="send">
-            SEND
-          </button>
         </form>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
+        <button type="button" onClick={handleFormSubmit} className="send">
+          SEND
+        </button>
       </section>
     </div>
   );

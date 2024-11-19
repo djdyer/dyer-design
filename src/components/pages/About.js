@@ -1,59 +1,80 @@
 import React from "react";
-import helper from "../utils/bio-helper";
 
 export default function About() {
   const headshot = require("../../assets/resume/casual_headshot.jpg");
+
+  const gaTech = require("../../assets/images/logos/ga_tech.png");
+  const ucb = require("../../assets/images/logos/berkeley.png");
+  const ucf = require("../../assets/images/logos/ucf.png");
+  const valencia = require("../../assets/images/logos/valencia.png");
 
   return (
     <div id="about-page">
       <section className="flexprofile">
         <img id="headshot" src={headshot} alt="Headshot" />
-        <div>
+        <div id="profile-content">
           <p className="bio">
-            My name is David Dyer, I am an artist, skateboarder, music label
-            co-founder, and eCommerce professional, making strides toward a
-            career in UX Design and frontend Web Dev. Born in Baton Rouge,
-            Louisiana, our family moved to Central Florida where I got heavy
-            into digital video production and DJ'ing. Eventually, my friends and
-            I launched a record label dubbed Prestige Music Group, still running
-            today. In '07, I graduated from the University of Central Florida
-            with a BA in Entrepreneurship. It was not long after graduation that
-            I relocated to sunny Los Angeles CA.
-            <span className="dots">...</span>
-            <br />
-            <br />
-            <span className="fullBio">
-              In early '09, I joined up with famed LA apparel brand, The
-              Hundreds as eCommerce Sales Manager. As the collections and
-              warehouse teams grew in size, as did the responsibilities merging
-              into digital marketing, merchandising, logistics, 3PL, the list
-              goes on. After years of building trust with executives, I was able
-              to position myself into a vital part of our web dev team. My input
-              was largely considered with respect to building out functionality
-              for multiple website redesigns and platform migrations. It was
-              this experience that planted a seed that later grew into
-              aspirations for a career in UX Design.
-              <br />
-              <br />
-              In 2018 I ventured up to the Bay Area, landing in Oakland. There,
-              I joined up with community apparel brand Oaklandish as Operations
-              Specialist, working to establish and manage multiple sub-label web
-              shops, integrated sales channels, and help facilitate the start of
-              their partnership with the Oakland Roots Soccer Club. Soon I
-              decided to further my education by earning certification as a UX
-              Designer from UCBerkeley, eventually taking part in the Global
-              Internship Program for summer 2021.
-              <br />
-              <br />
-              Enter COVID. I have relocated to ATL and completed a full stack
-              coding Bootcamp at GA Tech as of early '22. Now you can find me
-              handing UX Design and Front-end Web Development at Response Media.
-              Reach out, get in touch, and let's build something cool!
-            </span>
-            <button className="readMore" onClick={helper}>
-              READ MORE
-            </button>
+            Hello! My name is David Dyer. I am an artist and eCommerce
+            professional making strides toward a career in UX Design & Frontend
+            Web Development. I grew up in Baton Rouge, graduated from the UCF
+            College of Business Administration, and eventually moved out west to
+            earn my stripes. I've worked hard managing eComm Ops teams for The
+            Hundreds in LA, and Oaklandish in The Bay Area. Now residing in ATL,
+            I have up-skilled my way to certification in User Experience Design
+            via UCB, and Full Stack Web Development bootcamp with GATech. Now
+            I'm working with Response Media, a full-service marketing agency,
+            and fill my spare time with Fly App (travel start up) and Prestige
+            Music (record label). Coming to you now with a passion, some
+            experience under my belt, ready to build something cool.
           </p>
+
+          {/* <!-- All Education --> */}
+          <div>
+            <h1>EDUCATION</h1>
+          </div>
+          <div id="resume-education">
+            <div className="flexgrid">
+              <div className="flexschool">
+                <img className="logos" src={gaTech} alt="GA Tech Logo" />
+                <div>
+                  <h2>GA INSTITUTE OF TECHNOLOGY</h2>
+                  <h4>2022</h4>
+                  <h5>Full Stack Web Dev The Bootcamp Spot</h5>
+                </div>
+              </div>
+
+              <div className="flexschool">
+                <img className="logos" src={ucb} alt="UCBerkeley Logo" />
+                <div>
+                  <h2>UC BERKELEY EXT.</h2>
+                  <h4>2020</h4>
+                  <h5>Professional Certification in UX&nbsp;Design</h5>
+                </div>
+              </div>
+
+              <div className="flexschool">
+                <img className="logos" src={ucf} alt="UCF Logo" />
+                <div>
+                  <h2>UNIVERSITY OF CENTRAL FLORIDA</h2>
+                  <h4>2007</h4>
+                  <h5>BA Entrepreneurial Management</h5>
+                </div>
+              </div>
+
+              <div className="flexschool">
+                <img
+                  className="logos"
+                  src={valencia}
+                  alt="Valencia College Logo"
+                />
+                <div>
+                  <h2>VALENCIA COLLEGE</h2>
+                  <h4>2004</h4>
+                  <h5>AA / Digital Video Production</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

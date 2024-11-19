@@ -7,10 +7,6 @@ export default function Resume() {
   const oaklandish = require("../../assets/images/logos/oaklandish.png");
   const theHundreds = require("../../assets/images/logos/thehundreds.png");
   const prestige = require("../../assets/images/logos/prestige_logo.png");
-  const gaTech = require("../../assets/images/logos/ga_tech.png");
-  const ucb = require("../../assets/images/logos/berkeley.png");
-  const ucf = require("../../assets/images/logos/ucf.png");
-  const valencia = require("../../assets/images/logos/valencia.png");
 
   return (
     <div id="resume-page">
@@ -144,50 +140,6 @@ export default function Resume() {
                 Launched partnership with Triple Vision Record
                 Distribution--Rotterdam, to break into European market.
               </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- All Education --> */}
-      <section id="resume-education">
-        <div className="centerTitle">
-          <h1>EDUCATION</h1>
-        </div>
-        <div className="flexgrid">
-          <div className="flexschool">
-            <img className="logos" src={gaTech} alt="GA Tech Logo" />
-            <ul>
-              <h2>GA INSTITUTE OF TECHNOLOGY</h2>
-              <h4>2022</h4>
-              <h5>Full Stack Web Dev - The Bootcamp Spot</h5>
-            </ul>
-          </div>
-
-          <div className="flexschool">
-            <img className="logos" src={ucb} alt="UCBerkeley Logo" />
-            <ul>
-              <h2>UC BERKELEY EXT.</h2>
-              <h4>2020</h4>
-              <h5>Professional Certification in UX Design</h5>
-            </ul>
-          </div>
-
-          <div className="flexschool">
-            <img className="logos" src={ucf} alt="UCF Logo" />
-            <ul>
-              <h2>UNIVERSITY OF CENTRAL FLORIDA</h2>
-              <h4>2007</h4>
-              <h5>BA Entrepreneurial Management</h5>
-            </ul>
-          </div>
-
-          <div className="flexschool">
-            <img className="logos" src={valencia} alt="Valencia College Logo" />
-            <ul>
-              <h2>VALENCIA COLLEGE</h2>
-              <h4>2004</h4>
-              <h5>AA / Digital Video Production</h5>
             </ul>
           </div>
         </div>
