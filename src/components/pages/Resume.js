@@ -23,110 +23,132 @@ export default function Resume() {
         </div>
 
         <div className="experience-item">
-          <h2>UX/UI DESIGN INTERN // PEPPER SQUARE</h2>
-          <h4>2021</h4>
           <div className="flexwork">
             <img
               className="logos"
               src={pepperSquare}
               alt="Pepper Square Logo"
             />
+            <div>
+              <h2>UX/UI DESIGN INTERN // PEPPER SQUARE</h2>
+              <h4>2021</h4>
+            </div>
+          </div>
+          <div className="bullets">
             <ul>
               <li>
                 Developed web and mobile screens for a range of in-house and
-                client side projects.
+                client side&nbsp;projects.
               </li>
               <li>
                 Created prototype demos to present user flow, featuring device
-                mocks and micro-interactions.
+                mocks and micro&#8209;interactions.
               </li>
               <li>
                 Contributed multiple illustrations to support blog article
-                content in visual design.
+                content in visual&nbsp;design.
               </li>
             </ul>
           </div>
         </div>
 
         <div className="experience-item">
-          <h2>FREELANCE UX DESIGNER // 530 MEDIA LAB</h2>
-          <h4>2020-2021</h4>
           <div className="flexwork">
             <img className="logos" src={fiveThirty} alt="530 Media Lab Logo" />
+            <div>
+              <h2>FREELANCE UX DESIGNER // 530&nbsp;MEDIA&nbsp;LAB</h2>
+              <h4>2020-2021</h4>
+            </div>
+          </div>
+
+          <div className="bullets">
             <ul>
               <li>
-                Led mobile application UX Design from concept to prototype.
+                Led mobile application UX Design from concept to&nbsp;prototype.
               </li>
               <li>
                 Produced the Color Selector and Profile Selector mobile
                 applications --c/o Vinyl Visions; a leading supplier of vinyl
-                door and window trim.
+                door and window&nbsp;trim.
               </li>
               <li>
                 Delivered fully narrated product demos to technical, business,
-                and creative stakeholders showcasing functionality and value.
+                and creative stakeholders showcasing functionality
+                and&nbsp;value.
               </li>
             </ul>
           </div>
         </div>
 
         <div className="experience-item">
-          <h2>ECOMMERCE OPERATIONS MANAGER // OAKLANDISH</h2>
-          <h4>2018-2020</h4>
           <div className="flexwork">
             <img className="logos" src={oaklandish} alt="Oaklandish Logo" />
+            <div>
+              <h2>ECOMMERCE OPERATIONS MANAGER // OAKLANDISH</h2>
+              <h4>2018-2020</h4>
+            </div>
+          </div>
+
+          <div className="bullets">
             <ul>
               <li>
                 Directed enhanced end-to-end eCommerce operations for prominent,
                 Bay-Area apparel brand housing up to 7 sub-label or 3PL product
-                lines, simultaneously.
+                lines,&nbsp;simultaneously.
               </li>
               <li>
                 Independently published/merchandised all web shops, handling
                 fulfillment, logistics, and CRM for each brand through a
-                streamlined, omni-channel approach.
+                streamlined, omni-channel&nbsp;approach.
               </li>
             </ul>
           </div>
         </div>
 
         <div className="experience-item">
-          <h2>E-COMMERCE SALES MANAGER // THE HUNDREDS</h2>
-          <h4>2009-2017</h4>
           <div className="flexwork">
             <img className="logos" src={theHundreds} alt="The Hundreds Logo" />
+            <div>
+              <h2>E-COMMERCE SALES MANAGER // THE&nbsp;HUNDREDS</h2>
+              <h4>2009-2017</h4>
+            </div>
+          </div>
+          <div className="bullets">
             <ul>
               <li>
                 Effectively spearheaded online sales activity for this
                 quintessential, lifestyle-apparel brand; publishing all
                 collections/collaborations, in tandem with the launch and
-                analysis of digital marketing campaigns.
+                analysis of digital marketing&nbsp;campaigns.
               </li>
               <li>
                 Hired, trained, and managed team up to one dozen, while scaling
-                processing yield nearly 400%
+                processing yield nearly&nbsp;400%
               </li>
               <li>
                 Successfully executed multiple dashboard migrations, platform
                 integrations, and website redesigns; serving as liaison to
-                third-party development agencies.
+                third-party development&nbsp;agencies.
               </li>
             </ul>
           </div>
         </div>
 
         <div className="experience-item">
-          <h2>
-            CO-FOUNDER / CREATIVE DIRECTOR //
-            <strong>PRESTIGE MUSIC GROUP</strong>
-          </h2>
-          <h4>2007-Present</h4>
           <div className="flexwork">
             <img
               className="logos"
               src={prestige}
               alt="Prestige Music Group Logo"
             />
+            <div>
+              <h2>
+                CO-FOUNDER / CREATIVE DIRECTOR // PRESTIGE&nbsp;MUSIC&nbsp;GROUP
+              </h2>
+              <h4>2007-Present</h4>
+            </div>
+          </div>
+          <div className="bullets">
             <ul>
               <li>
                 Impassioned director of established record label featuring music

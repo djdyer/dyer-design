@@ -29,7 +29,7 @@ export default function About() {
           </p>
 
           {/* <!-- All Education --> */}
-          <div>
+          <div className="education-header">
             <h1>EDUCATION</h1>
           </div>
           <div id="resume-education">

@@ -53,7 +53,7 @@ body {
 
 #footer-back {
   bottom: 0 !important;
-  height: 500px !important;
+  height: 300px !important;
   background-image: url("./assets/images/header-footer/footer_background.png");
   background-position: top;
   z-index: -1;
@@ -79,7 +79,6 @@ header {
   background-size: cover;
   justify-content: center;
   background-position-y: top;
-  z-index: -1;
 }
 
 nav {
@@ -258,6 +257,7 @@ article:hover {
 .experience-item {
   width: 80%;
   margin: auto;
+  margin: 20px auto;
 }
 
 #resume-experience,
@@ -298,10 +298,7 @@ h2 {
   font-weight: 900;
   color: rgb(19, 19, 19);
   margin-bottom: 8px;
-}
-
-h2:hover {
-  color: var(--light);
+  margin-top: 0px;
 }
 
 h4 {
@@ -311,9 +308,9 @@ h4 {
 }
 
 .logos {
-  margin: 0px;
-  width: 85px;
-  height: auto;
+  margin: 20px;
+  height: 85px;
+  width: auto;
 }
 
 li,
@@ -322,7 +319,7 @@ h5 {
   font-family: futura, sans-serif;
   font-weight: 100;
   font-size: 14px;
-  margin-bottom: 0px;
+  margin: 0px;
   color: var(--dark);
 }
 
@@ -332,8 +329,12 @@ h5 {
 
 .flexwork {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: 10px;
+}
+
+.bullets {
+  width: 80%;
 }
 
 .flexschool {
@@ -604,11 +605,7 @@ p.error-text {
     flex-direction: row;
     align-items: flex-start;
     max-width: fit-content;
-  }
-
-  .logos {
-    margin-right: 25px;
-    padding-top: 15px;
+    align-items: center;
   }
 
   #headshot {
@@ -654,10 +651,6 @@ p.error-text {
     min-height: 300px;
   }
 
-  .flexwork {
-    flex-wrap: wrap;
-  }
-
   .work-grid {
     flex-direction: column;
     justify-content: space-around;
@@ -682,7 +675,32 @@ p.error-text {
 }
 
 @media screen and (max-width: 501px) {
-  #about-page {
+  #logo {
+    max-width: 110px;
+    max-height: auto;
+  }
+
+  .logos {
+    height: 70px;
+  }
+
+  #logolockup {
+    display: flex;
+    justify-items: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  header a h1,
+  .education-header h1,
+  h2 {
+    width: fit-content;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  #about-page,
+  .experience-item {
     width: 90%;
   }
 
@@ -700,15 +718,6 @@ p.error-text {
     margin: 0px 0px 20px 0px;
   }
 
-  .flexwork {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logos {
-    margin: 0 20px;
-  }
-
   th {
     padding: 15px;
   }
@@ -724,5 +733,9 @@ p.error-text {
 
   #message {
     height: 100px;
+  }
+
+  .bullets {
+    width: 90%;
   }
 }
