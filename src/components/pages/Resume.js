@@ -7,6 +7,9 @@ export default function Resume() {
   const oaklandish = require("../../assets/images/logos/oaklandish.png");
   const theHundreds = require("../../assets/images/logos/thehundreds.png");
   const prestige = require("../../assets/images/logos/prestige_logo.png");
+  const responseMedia = require("../../assets/images/logos/response_media.jpg");
+
+  const flyApp = require("../../assets/images/logos/fly_icons_logo.png");
 
   return (
     <div id="resume-page">
@@ -14,12 +17,66 @@ export default function Resume() {
         <div className="centerTitle">
           <h1>EXPERIENCE</h1>
           <a
-            href="https://drive.google.com/file/d/1kmmjf-HuqfVJr5-kVEHmw1JV9mFzlbpd/view?usp=sharing"
+            href="https://drive.google.com/file/d/16fyATD5keMQy_ocrODf3loSNcNQt35sR/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
           >
             <img className="resumeBtn" src={resumeBtn} alt="Download Resume" />
           </a>
+        </div>
+
+        <div className="experience-item">
+          <div className="flexwork">
+            <img className="logos" src={flyApp} alt="Response Media Logo" />
+            <div>
+              <h2>CO-FOUNDER / DESIGNER / DEVELOPER // FLY APP</h2>
+              <h4>2020-PRESENT</h4>
+            </div>
+          </div>
+          <div className="bullets">
+            <ul>
+              <li>
+                Startup co-founder of what began as a student portfolio piece,
+                evolving into a patent pending application to innovate private
+                charter.
+              </li>
+              <li>
+                Acting user experience and interface designer, serving as
+                development team lead.
+              </li>
+              <li>Projected deployment summer 2025.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="experience-item">
+          <div className="flexwork">
+            <img
+              className="logos"
+              src={responseMedia}
+              alt="Response Media Logo"
+            />
+            <div>
+              <h2>UX DESIGNER / FRONTEND WEB DEVELOPER // RESPONSE MEDIA</h2>
+              <h4>2022-PRESENT</h4>
+            </div>
+          </div>
+          <div className="bullets">
+            <ul>
+              <li>
+                Working in tandem with design and development teams to produce
+                and QA dynamic and interactive email marketing&nbsp;campaigns.
+              </li>
+              <li>
+                Representing Fortune 500 clientele to develop and deploy landing
+                pages, microsites and form funnels for lead collection.
+              </li>
+              <li>
+                Designed and developed new company website and brand identity,
+                including content inventory overhaul.
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="experience-item">
@@ -93,8 +150,8 @@ export default function Resume() {
             <ul>
               <li>
                 Directed enhanced end-to-end eCommerce operations for prominent,
-                Bay-Area apparel brand housing up to 7 sub-label or 3PL product
-                lines,&nbsp;simultaneously.
+                Bay-Area apparel brand housing up to seven sub-label or 3PL
+                product lines,&nbsp;simultaneously.
               </li>
               <li>
                 Independently published/merchandised all web shops, handling
@@ -172,8 +229,6 @@ export default function Resume() {
         <div className="centerTitle">
           <h1>TOOLS</h1>
         </div>
-        <br />
-        <br />
         <table>
           <thead>
             <tr id="tableheader">

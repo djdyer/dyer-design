@@ -257,18 +257,26 @@ article:hover {
 .experience-item {
   width: 80%;
   margin: auto;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 #resume-experience,
-#tools,
+#resume-tools,
 #resume-contact {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding: 25px;
-  margin: 0px 20px;
+  margin: 0px;
+  margin-bottom: 80px;
   background-color: white;
   border: 2px solid var(--dark);
+  z-index: 2;
+}
+
+#resume-experience {
+  padding-bottom: 60px;
 }
 
 .centerTitle {
@@ -321,6 +329,10 @@ h5 {
   font-size: 14px;
   margin: 0px;
   color: var(--dark);
+}
+
+li {
+  margin: 6px 0px;
 }
 
 h5 {
@@ -603,7 +615,6 @@ p.error-text {
 
   .flexschool {
     flex-direction: row;
-    align-items: flex-start;
     max-width: fit-content;
     align-items: center;
   }
@@ -632,15 +643,6 @@ p.error-text {
 
   #readMore {
     margin-left: 35px;
-  }
-
-  section {
-    position: relative;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    z-index: 2;
   }
 
   .work1,
@@ -706,6 +708,7 @@ p.error-text {
 
   #resume-experience {
     padding: 0px;
+    padding-bottom: 25px;
     margin: 0px;
   }
 
