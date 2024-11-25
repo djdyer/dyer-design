@@ -239,11 +239,27 @@ article {
 }
 
 .work3 {
-  background-image: url(./assets/images/work-thumbs/tech_bros_home_demo.jpg);
+  background-image: url(./assets/images/work-thumbs/my-school.png);
 }
 
 .work4 {
-  background-image: url(./assets/images/work-thumbs/pokego_home.png);
+  background-image: url(./assets/images/work-thumbs/material_trader_mobiles.png);
+}
+
+.work5 {
+  background-image: url(./assets/images/work-thumbs/tech_bros_home_demo.jpg);
+}
+
+.work6 {
+  background-image: url(./assets/images/work-thumbs/PokeGo-mobile.png);
+}
+
+.work7 {
+  background-image: url(./assets/images/work-thumbs/rainorshine_day.png);
+}
+
+.work8 {
+  background-image: url(./assets/images/work-thumbs/code_quiz.jpg);
 }
 
 article:hover {
