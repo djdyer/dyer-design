@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -25,9 +27,9 @@ function App() {
 
         <div id="site-body">
           <Routes>
-            <Route path="/" element={<Work />} />
-            <Route path="/work" element={<Work />} />
+            <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
 
