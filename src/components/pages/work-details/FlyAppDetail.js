@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function Work() {
-  const github = require("../../../assets/images/social-icons/github_icon.png");
-  const githubHover = require("../../../assets/images/social-icons/github_hover.png");
+  // const github = require("../../../assets/images/social-icons/github_icon.png");
+  // const githubHover = require("../../../assets/images/social-icons/github_hover.png");
 
   // const mockOne = require("blob:https://dash.cloudflare.com/6d1ee5d8-a3b8-4950-8987-d33b2d43182e");
 

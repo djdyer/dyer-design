@@ -34,12 +34,12 @@ body {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 1;
 }
 
 #site-body {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 #header-back {
@@ -48,7 +48,7 @@ body {
   height: 400px !important;
   background-image: url("./assets/images/header-footer/header_background.png");
   background-position: bottom;
-  z-index: 0;
+  z-index: -1;
 }
 
 #footer-back {
