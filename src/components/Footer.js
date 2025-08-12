@@ -62,10 +62,6 @@ export default function Footer() {
             />
           </a>
         </div>
-
-        <h6>
-          <a href="https://www.dyer.design">https://www.dyer.design</a>
-        </h6>
       </footer>
     </div>
   );

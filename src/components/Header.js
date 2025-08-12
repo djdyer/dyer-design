@@ -1,19 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Header({ currentPage, handlePageChange }) {
+export default function Header() {
   const logo = require("../../src/assets/images/logos/dd_logo.png");
+
   return (
     <header>
       <div id="header">
         <nav>
           <div id="logolockup">
-            <a href="https://dyer.design">
-              <img
-                id="logo"
-                src={logo}
-                target="_blank"
-                alt="Dyer Design Lettermark"
-              />
+            <a
+              href="https://dyer.design"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img id="logo" src={logo} alt="Dyer Design Lettermark" />
             </a>
             <div>
               <h1 id="name">DYER</h1>
@@ -22,37 +23,33 @@ export default function Header({ currentPage, handlePageChange }) {
           </div>
 
           <div id="header-nav">
-            <a
-              href="#work"
-              onClick={() => handlePageChange("Work")}
-              className={currentPage === "Work" ? "h1active" : ""}
+            <NavLink
+              to="/work"
+              className={({ isActive }) => (isActive ? "h1active" : "")}
             >
               <h1>WORK</h1>
-            </a>
+            </NavLink>
 
-            <a
-              href="#resume"
-              onClick={() => handlePageChange("Resume")}
-              className={currentPage === "Resume" ? "h1active" : ""}
+            <NavLink
+              to="/resume"
+              className={({ isActive }) => (isActive ? "h1active" : "")}
             >
               <h1>RESUME</h1>
-            </a>
+            </NavLink>
 
-            <a
-              href="#about"
-              onClick={() => handlePageChange("About")}
-              className={currentPage === "About" ? "h1active" : ""}
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "h1active" : "")}
             >
               <h1>ABOUT</h1>
-            </a>
+            </NavLink>
 
-            <a
-              href="#contact"
-              onClick={() => handlePageChange("Contact")}
-              className={currentPage === "Contact" ? "h1active" : ""}
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "h1active" : "")}
             >
               <h1>CONTACT</h1>
-            </a>
+            </NavLink>
           </div>
         </nav>
       </div>

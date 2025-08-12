@@ -62,7 +62,8 @@ body {
 #work-page,
 #resume-page,
 #about-page,
-#contact-page {
+#contact-page,
+#work-entry-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,6 +170,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
   width: 100%;
 }
 
@@ -194,6 +196,7 @@ a {
   padding: 5px;
   width: fit-content;
   height: 40px;
+  border-radius: 25px 0;
 }
 
 .git_link {
@@ -214,20 +217,23 @@ a:hover img.default {
   display: none;
 }
 
-article {
-  display: block;
-  margin: 0px 20px 40px 20px;
+.work-entry {
+  flex: 1 1 300px;
+  margin: 10px;
+  width: 550px;
+  border-radius: 30px;
   height: 300px;
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   flex-basis: 50%;
   flex-grow: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border: 3px solid var(--dark);
-  box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 26px 8px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
 }
 
 .work1 {
@@ -255,14 +261,14 @@ article {
 }
 
 .work7 {
-  background-image: url(./assets/images/work-thumbs/rainorshine_day.png);
-}
-
-.work8 {
   background-image: url(./assets/images/work-thumbs/code_quiz.jpg);
 }
 
-article:hover {
+.work8 {
+  background-image: url(./assets/images/work-thumbs/rainorshine_day.png);
+}
+
+.work-entry:hover {
   border: 3px solid var(--light);
   background-color: var(--light);
   color: var(--dark);
@@ -273,29 +279,32 @@ article:hover {
 .experience-item {
   width: 80%;
   margin: auto;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 #resume-experience,
 #resume-tools,
 #resume-contact {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 25px;
   margin: 0px;
-  margin-bottom: 80px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
   border: 2px solid var(--dark);
   z-index: 2;
 }
 
 #resume-experience {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .centerTitle {
+  display: flex;
+  flex-direction: column;
   align-self: center;
   text-align: center;
   margin-top: 20px;
@@ -332,7 +341,7 @@ h4 {
 }
 
 .logos {
-  margin: 20px;
+  margin: 0px;
   height: 85px;
   width: auto;
 }
@@ -345,6 +354,10 @@ h5 {
   font-size: 14px;
   margin: 0px;
   color: var(--dark);
+}
+
+ul {
+  padding-left: 15px;
 }
 
 li {
@@ -361,6 +374,10 @@ h5 {
   align-items: center;
 }
 
+.title-year {
+  margin-left: 20px;
+}
+
 .bullets {
   width: 80%;
 }
@@ -375,7 +392,8 @@ h5 {
 .flexgrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 20px;
   align-content: left;
 }
 
@@ -431,7 +449,8 @@ td:hover {
 .flexprofile {
   display: flex;
   padding: 0px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 27px;
   border: 2px solid var(--dark);
 }
 
@@ -439,6 +458,15 @@ td:hover {
   display: block;
   width: 40%;
   height: auto;
+  border-radius: 25px 0 0 25px;
+}
+
+.education-header {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #profile-content {
@@ -448,6 +476,11 @@ td:hover {
 
 #profile-content h1 {
   margin-top: 40px;
+}
+
+.school-degree h2 {
+  font-size: 22px;
+  line-height: 22px;
 }
 
 p {
@@ -474,8 +507,12 @@ p {
   align-self: center;
 }
 
+.school-degree {
+  margin-top: 10px;
+}
+
 .send:hover {
-  box-shadow: 0px 1px 5px rgb(44, 44, 84);
+  box-shadow: 0px 1px 5px rgb(64, 64, 64, 0.2);
 }
 
 /* CONTACT */
@@ -484,10 +521,11 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
-  background-color: var(--dark);
+  background-color: rgba(9, 100, 128, 0.1);
   height: auto;
   padding: 40px;
   margin: auto;
+  border-radius: 25px;
 }
 
 #contact-form h1 {
@@ -582,7 +620,7 @@ p.error-text {
     width: 40%;
   }
 
-  article {
+  .work-entry {
     height: 400px;
     max-width: 700px;
   }
@@ -613,10 +651,17 @@ p.error-text {
 
   .flexgrid {
     flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
   }
 
   #about-page {
     width: 50%;
+  }
+
+  .school-degree {
+    margin-top: 0px;
+    margin-left: 15px;
   }
 
   #profile-content {
@@ -629,23 +674,35 @@ p.error-text {
     align-items: center;
   }
 
+  #headshot {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 25px 25px 0px 0px;
+  }
+
   .flexschool {
     flex-direction: row;
     max-width: fit-content;
     align-items: center;
-  }
-
-  #headshot {
-    width: 100%;
-    height: auto;
-    margin: 0;
+    margin: 10px 0px;
   }
 }
 
 @media screen and (max-width: 900px) {
+  #name2 {
+    margin-top: -20px;
+  }
+
   header a h1 {
     font-size: 32px;
     margin: 0px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: normal;
   }
 
   #resume-page,
@@ -659,14 +716,6 @@ p.error-text {
 
   #readMore {
     margin-left: 35px;
-  }
-
-  .work1,
-  .work2,
-  .work3,
-  .work4 {
-    width: -webkit-fill-available;
-    min-height: 300px;
   }
 
   .work-grid {
@@ -687,8 +736,14 @@ p.error-text {
   }
 
   .flexschool {
-    width: 90%;
+    width: 99%;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work-entry {
+    width: 90vw;
   }
 }
 
@@ -710,11 +765,36 @@ p.error-text {
   }
 
   header a h1,
-  .education-header h1,
-  h2 {
+  h1 {
     width: fit-content;
     font-size: 24px;
     line-height: 24px;
+    margin: 10px;
+  }
+  #name2 {
+    margin-top: -20px;
+  }
+
+  #logolockup h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  h2,
+  #tableheader th {
+    font-size: 20px;
+    line-height: 20px;
+    width: fit-content;
+  }
+
+  li,
+  ul,
+  h5 {
+    font-size: 12px;
+  }
+
+  td {
+    padding: 5px;
   }
 
   #about-page,
@@ -725,7 +805,13 @@ p.error-text {
   #resume-experience {
     padding: 0px;
     padding-bottom: 25px;
-    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  .centerTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
   header {
@@ -733,12 +819,12 @@ p.error-text {
     justify-content: space-around;
   }
 
-  article {
+  .work-entry {
     margin: 0px 0px 20px 0px;
   }
 
   th {
-    padding: 15px;
+    padding: 10px;
   }
 
   table {
@@ -755,6 +841,15 @@ p.error-text {
   }
 
   .bullets {
-    width: 90%;
+    width: 99%;
+  }
+
+  .icon {
+    height: 35px;
+    margin: 8px;
+  }
+
+  .education-header {
+    justify-content: center;
   }
 }

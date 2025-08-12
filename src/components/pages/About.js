@@ -36,7 +36,7 @@ export default function About() {
             <div className="flexgrid">
               <div className="flexschool">
                 <img className="logos" src={gaTech} alt="GA Tech Logo" />
-                <div>
+                <div className="school-degree">
                   <h2>GA INSTITUTE OF TECHNOLOGY</h2>
                   <h4>2022</h4>
                   <h5>Full Stack Web Dev The Bootcamp Spot</h5>
@@ -45,7 +45,7 @@ export default function About() {
 
               <div className="flexschool">
                 <img className="logos" src={ucb} alt="UCBerkeley Logo" />
-                <div>
+                <div className="school-degree">
                   <h2>UC BERKELEY EXT.</h2>
                   <h4>2020</h4>
                   <h5>Professional Certification in UX&nbsp;Design</h5>
@@ -54,7 +54,7 @@ export default function About() {
 
               <div className="flexschool">
                 <img className="logos" src={ucf} alt="UCF Logo" />
-                <div>
+                <div className="school-degree">
                   <h2>UNIVERSITY OF CENTRAL FLORIDA</h2>
                   <h4>2007</h4>
                   <h5>BA Entrepreneurial Management</h5>
@@ -67,7 +67,7 @@ export default function About() {
                   src={valencia}
                   alt="Valencia College Logo"
                 />
-                <div>
+                <div className="school-degree">
                   <h2>VALENCIA COLLEGE</h2>
                   <h4>2004</h4>
                   <h5>AA / Digital Video Production</h5>

@@ -28,7 +28,7 @@ export default function Resume() {
         <div className="experience-item">
           <div className="flexwork">
             <img className="logos" src={flyApp} alt="Response Media Logo" />
-            <div>
+            <div className="title-year">
               <h2>CO-FOUNDER / DESIGNER / DEVELOPER // FLY APP</h2>
               <h4>2020-PRESENT</h4>
             </div>
@@ -56,8 +56,8 @@ export default function Resume() {
               src={responseMedia}
               alt="Response Media Logo"
             />
-            <div>
-              <h2>UX DESIGNER / FRONTEND WEB DEVELOPER // RESPONSE MEDIA</h2>
+            <div className="title-year">
+              <h2>UX DESIGNER / FRONTEND DEVELOPER // RESPONSE MEDIA</h2>
               <h4>2022-PRESENT</h4>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function Resume() {
               src={pepperSquare}
               alt="Pepper Square Logo"
             />
-            <div>
+            <div className="title-year">
               <h2>UX/UI DESIGN INTERN // PEPPER SQUARE</h2>
               <h4>2021</h4>
             </div>
@@ -112,7 +112,7 @@ export default function Resume() {
         <div className="experience-item">
           <div className="flexwork">
             <img className="logos" src={fiveThirty} alt="530 Media Lab Logo" />
-            <div>
+            <div className="title-year">
               <h2>FREELANCE UX DESIGNER // 530&nbsp;MEDIA&nbsp;LAB</h2>
               <h4>2020-2021</h4>
             </div>
@@ -140,7 +140,7 @@ export default function Resume() {
         <div className="experience-item">
           <div className="flexwork">
             <img className="logos" src={oaklandish} alt="Oaklandish Logo" />
-            <div>
+            <div className="title-year">
               <h2>ECOMMERCE OPERATIONS MANAGER // OAKLANDISH</h2>
               <h4>2018-2020</h4>
             </div>
@@ -165,7 +165,7 @@ export default function Resume() {
         <div className="experience-item">
           <div className="flexwork">
             <img className="logos" src={theHundreds} alt="The Hundreds Logo" />
-            <div>
+            <div className="title-year">
               <h2>E-COMMERCE SALES MANAGER // THE&nbsp;HUNDREDS</h2>
               <h4>2009-2017</h4>
             </div>
@@ -198,7 +198,7 @@ export default function Resume() {
               src={prestige}
               alt="Prestige Music Group Logo"
             />
-            <div>
+            <div className="title-year">
               <h2>
                 CO-FOUNDER / CREATIVE DIRECTOR // PRESTIGE&nbsp;MUSIC&nbsp;GROUP
               </h2>
@@ -232,41 +232,46 @@ export default function Resume() {
         <table>
           <thead>
             <tr id="tableheader">
-              <th>ECOMM</th>
-              <th>DESIGN</th>
               <th>WEB DEV</th>
+              <th>DESIGN</th>
+              <th>ECOMM</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Magento 2.0</td>
+              <td>HTML5 / CSS3</td>
               <td>Figma</td>
-              <td>HTML5/CSS3</td>
+              <td>Magento 2.0</td>
             </tr>
             <tr>
-              <td>Shopify Plus</td>
-              <td>XD</td>
               <td>JavaScript</td>
+              <td>XD</td>
+              <td>Shopify Plus</td>
             </tr>
             <tr>
-              <td>Wix</td>
-              <td>Illustrator</td>
               <td>Node</td>
+              <td>Illustrator</td>
+              <td>Wix</td>
             </tr>
             <tr>
-              <td>Squarespace</td>
-              <td>Procreate</td>
               <td>Express</td>
+              <td>Photoshop</td>
+              <td>Squarespace</td>
             </tr>
             <tr>
-              <td>Wordpress</td>
-              <td>Premier Pro</td>
               <td>MongoDB</td>
+              <td>Procreate</td>
+              <td>Wordpress</td>
             </tr>
             <tr>
-              <td>Full Circle</td>
-              <td>Sketch</td>
               <td>React</td>
+              <td>Premier Pro</td>
+              <td>Full Circle</td>
+            </tr>
+            <tr>
+              <td>Angular</td>
+              <td>After Effects</td>
+              <td>HubSpot</td>
             </tr>
           </tbody>
         </table>
