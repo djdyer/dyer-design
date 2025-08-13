@@ -70,12 +70,14 @@ body {
   align-items: center;
   width: 80%;
   margin: auto;
+  max-width: 1200px;
 }
 
 /* NAVIGATION */
 header {
   display: flex;
   flex-direction: row;
+  margin: auto;
   width: 100vw;
   padding: 30px 0px;
   height: fit-content;
@@ -95,6 +97,7 @@ nav {
 
 #header {
   width: 80%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -283,11 +286,16 @@ a:hover img.default {
   filter: drop-shadow(0 0 0);
 }
 
+.deck {
+  width: 100%;
+  height: auto;
+}
+
 /* RESUME PAGE */
 .experience-item {
   width: 80%;
   margin: auto;
-  margin: 15px auto;
+  margin: 20px auto;
 }
 
 #resume-experience,
@@ -315,7 +323,7 @@ a:hover img.default {
   flex-direction: column;
   align-self: center;
   text-align: center;
-  margin-top: 20px;
+  margin: 40px 0 20px 0;
 }
 
 .centerTitle h1 {
@@ -337,7 +345,7 @@ h2 {
   font-size: 21pt;
   line-height: 21pt;
   font-weight: 900;
-  color: rgb(19, 19, 19);
+  color: var(--dark);
   margin-bottom: 8px;
   margin-top: 0px;
 }
@@ -361,7 +369,11 @@ h5 {
   font-weight: 100;
   font-size: 14px;
   margin: 0px;
-  color: var(--dark);
+  color: rgb(19, 19, 19);
+}
+
+h5 {
+  margin-top: 8px;
 }
 
 ul {
@@ -372,14 +384,10 @@ li {
   margin: 6px 0px;
 }
 
-h5 {
-  margin-top: 8px;
-}
-
 .flexwork {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .title-year {
@@ -529,7 +537,7 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
-  background-color: rgba(9, 100, 128, 0.1);
+  background-color: var(--dark);
   height: auto;
   padding: 40px;
   margin: auto;
@@ -566,6 +574,7 @@ input:hover {
   box-shadow: 0px 1px 7px rgb(15, 24, 48);
 }
 
+/* FOOTER */
 footer {
   position: relative;
   bottom: 0;
@@ -589,7 +598,6 @@ footer a {
   letter-spacing: 2px;
 }
 
-/* FOOTER */
 .icon {
   width: auto;
   height: 50px;
@@ -611,38 +619,6 @@ p.error-text {
   margin-top: 0;
 }
 
-@media screen and (min-width: 2200px) {
-  #work-page,
-  #resume-page,
-  #about-page,
-  #contact-page {
-    width: 50%;
-  }
-
-  #work-page,
-  #header {
-    width: 50%;
-  }
-
-  #resume-page {
-    width: 40%;
-  }
-
-  .work-entry {
-    height: 400px;
-    max-width: 700px;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  #header,
-  #work-page,
-  #resume-page,
-  #about-page {
-    width: 70%;
-  }
-}
-
 @media screen and (max-width: 1500px) {
   #header,
   #work-page {
@@ -655,10 +631,6 @@ p.error-text {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
-  }
-
-  #about-page {
-    width: 50%;
   }
 
   .school-degree {
@@ -710,10 +682,6 @@ p.error-text {
   #resume-page,
   #contact-page {
     width: 90%;
-  }
-
-  #about-page {
-    width: 70%;
   }
 
   #readMore {

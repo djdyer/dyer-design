@@ -17,7 +17,7 @@ export default function Resume() {
         <div className="centerTitle">
           <h1>EXPERIENCE</h1>
           <a
-            href="https://drive.google.com/file/d/16fyATD5keMQy_ocrODf3loSNcNQt35sR/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1lZaU6OwGeTKj1H3leVrHYWPGkaZi0L6O/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
@@ -31,21 +31,22 @@ export default function Resume() {
             <div className="title-year">
               <h2>CO-FOUNDER / DESIGNER / DEVELOPER // FLY APP</h2>
               <h4>2020-PRESENT</h4>
+
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Startup co-founder of patent-pending web and mobile
+                    application to innovate the private charter air
+                    travel&nbsp;industry.
+                  </li>
+                  <li>
+                    Acting user experience and interface designer, serving as
+                    development team lead and project manager.
+                  </li>
+                  <li>Projected deployment in Fall 2025.</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="bullets">
-            <ul>
-              <li>
-                Startup co-founder of what began as a student portfolio piece,
-                evolving into a patent pending application to innovate private
-                charter.
-              </li>
-              <li>
-                Acting user experience and interface designer, serving as
-                development team lead.
-              </li>
-              <li>Projected deployment summer 2025.</li>
-            </ul>
           </div>
         </div>
 
@@ -59,23 +60,25 @@ export default function Resume() {
             <div className="title-year">
               <h2>UX DESIGNER / FRONTEND DEVELOPER // RESPONSE MEDIA</h2>
               <h4>2022-PRESENT</h4>
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Designed and developed new company website and brand
+                    identity, including content inventory&nbsp;overhaul.
+                  </li>
+                  <li>
+                    Representing Fortune 500 clientele to develop and deploy
+                    landing pages, microsites, and form funnels for
+                    lead&nbsp;collection.
+                  </li>
+                  <li>
+                    Working in tandem with design and development teams to
+                    produce and QA dynamic and interactive email
+                    marketing&nbsp;campaigns.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="bullets">
-            <ul>
-              <li>
-                Working in tandem with design and development teams to produce
-                and QA dynamic and interactive email marketing&nbsp;campaigns.
-              </li>
-              <li>
-                Representing Fortune 500 clientele to develop and deploy landing
-                pages, microsites and form funnels for lead collection.
-              </li>
-              <li>
-                Designed and developed new company website and brand identity,
-                including content inventory overhaul.
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -89,23 +92,21 @@ export default function Resume() {
             <div className="title-year">
               <h2>UX/UI DESIGN INTERN // PEPPER SQUARE</h2>
               <h4>2021</h4>
+
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Developed proposals for both web and mobile applications to
+                    a range of in-house and client-side&nbsp;projects.
+                  </li>
+                  <li>
+                    Crafted prototype demos presenting user flow and micro
+                    interactions, provided illustrations to support blog
+                    articles and case study&nbsp;content.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="bullets">
-            <ul>
-              <li>
-                Developed web and mobile screens for a range of in-house and
-                client side&nbsp;projects.
-              </li>
-              <li>
-                Created prototype demos to present user flow, featuring device
-                mocks and micro&#8209;interactions.
-              </li>
-              <li>
-                Contributed multiple illustrations to support blog article
-                content in visual&nbsp;design.
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -115,25 +116,21 @@ export default function Resume() {
             <div className="title-year">
               <h2>FREELANCE UX DESIGNER // 530&nbsp;MEDIA&nbsp;LAB</h2>
               <h4>2020-2021</h4>
-            </div>
-          </div>
 
-          <div className="bullets">
-            <ul>
-              <li>
-                Led mobile application UX Design from concept to&nbsp;prototype.
-              </li>
-              <li>
-                Produced the Color Selector and Profile Selector mobile
-                applications --c/o Vinyl Visions; a leading supplier of vinyl
-                door and window&nbsp;trim.
-              </li>
-              <li>
-                Delivered fully narrated product demos to technical, business,
-                and creative stakeholders showcasing functionality
-                and&nbsp;value.
-              </li>
-            </ul>
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Designed the Color Selector & Profile Selector mobile
+                    applications for Vinyl Visions; a leading supplier of vinyl
+                    door and window&nbsp;trim.
+                  </li>
+                  <li>
+                    Eliminated need to manufacture and distribute annual swatch
+                    booklets and product&nbsp;catalogs.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -143,22 +140,22 @@ export default function Resume() {
             <div className="title-year">
               <h2>ECOMMERCE OPERATIONS MANAGER // OAKLANDISH</h2>
               <h4>2018-2020</h4>
-            </div>
-          </div>
 
-          <div className="bullets">
-            <ul>
-              <li>
-                Directed enhanced end-to-end eCommerce operations for prominent,
-                Bay-Area apparel brand housing up to seven sub-label or 3PL
-                product lines,&nbsp;simultaneously.
-              </li>
-              <li>
-                Independently published/merchandised all web shops, handling
-                fulfillment, logistics, and CRM for each brand through a
-                streamlined, omni-channel&nbsp;approach.
-              </li>
-            </ul>
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Directed enhanced eCommerce operations for leading Bay-Area
+                    apparel brand, housing up to seven sub-label or third-party
+                    product&nbsp;lines.
+                  </li>
+                  <li>
+                    Published and merchandised all product, handling
+                    fulfillment, logistics, and CRM through a streamlined,
+                    omni-channel&nbsp;approach.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -168,26 +165,26 @@ export default function Resume() {
             <div className="title-year">
               <h2>E-COMMERCE SALES MANAGER // THE&nbsp;HUNDREDS</h2>
               <h4>2009-2017</h4>
+
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Spearheaded online sales activity, publishing all
+                    collections in tandem with launch and analysis of digital
+                    marketing&nbsp;campaigns.
+                  </li>
+                  <li>
+                    Hired, trained, and managed team of up to a dozen team
+                    members, while scaling processing yield nearly&nbsp;400%.
+                  </li>
+                  <li>
+                    Executed dashboard migrations, platform integrations, and
+                    site redesigns, serving as executive liaison to
+                    third-party&nbsp;developers.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="bullets">
-            <ul>
-              <li>
-                Effectively spearheaded online sales activity for this
-                quintessential, lifestyle-apparel brand; publishing all
-                collections/collaborations, in tandem with the launch and
-                analysis of digital marketing&nbsp;campaigns.
-              </li>
-              <li>
-                Hired, trained, and managed team up to one dozen, while scaling
-                processing yield nearly&nbsp;400%
-              </li>
-              <li>
-                Successfully executed multiple dashboard migrations, platform
-                integrations, and website redesigns; serving as liaison to
-                third-party development&nbsp;agencies.
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -203,23 +200,25 @@ export default function Resume() {
                 CO-FOUNDER / CREATIVE DIRECTOR // PRESTIGE&nbsp;MUSIC&nbsp;GROUP
               </h2>
               <h4>2007-Present</h4>
+
+              <div className="bullets">
+                <ul>
+                  <li>
+                    Impassioned director of established record label featuring
+                    music catalogs available in both digital and physical
+                    formats.
+                  </li>
+                  <li>
+                    Established web presence across key platforms, coupled with
+                    a comprehensive rebranding initiative.
+                  </li>
+                  <li>
+                    Launched partnership with Triple Vision Record
+                    Distribution--Rotterdam, to break into European market.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="bullets">
-            <ul>
-              <li>
-                Impassioned director of established record label featuring music
-                catalogs available in both digital and physical formats.
-              </li>
-              <li>
-                Established web presence across key platforms, coupled with a
-                comprehensive rebranding initiative.
-              </li>
-              <li>
-                Launched partnership with Triple Vision Record
-                Distribution--Rotterdam, to break into European market.
-              </li>
-            </ul>
           </div>
         </div>
       </section>

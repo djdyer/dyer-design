@@ -14,18 +14,18 @@ export default function About() {
         <img id="headshot" src={headshot} alt="Headshot" />
         <div id="profile-content">
           <p className="bio">
-            Hello! My name is David Dyer. I am an artist and eCommerce
-            professional making strides toward a career in UX Design & Frontend
-            Web Development. I grew up in Baton Rouge, graduated from the UCF
-            College of Business Administration, and eventually moved out west to
-            earn my stripes. I've worked hard managing eComm Ops teams for The
-            Hundreds in LA, and Oaklandish in The Bay Area. Now residing in ATL,
-            I have up-skilled my way to certification in User Experience Design
-            via UCB, and Full Stack Web Development bootcamp with GATech. Now
-            I'm working with Response Media, a full-service marketing agency,
-            and fill my spare time with Fly App (travel start up) and Prestige
-            Music (record label). Coming to you now with a passion, some
-            experience under my belt, ready to build something cool.
+            Hello! My name is David Dyer. I am an artist, web developer, UX
+            Designer, and eCommerce professional. Not only that, a skateboarding
+            coach and DJ! After growing up in Baton Rouge, I graduated from the
+            UCF College of Business Administration, and eventually moved out
+            west to earn my stripes. I've worked hard managing eComm Ops teams
+            for The Hundreds in LA, and Oaklandish in The Bay Area. Now residing
+            in ATL, I have up-skilled my way to certification in User Experience
+            Design via UCB, and Full Stack Web Development bootcamp with GATech.
+            Now I'm working with Response Media, a full-service marketing
+            agency, and fill my spare time with Fly App (travel start up) and
+            Prestige Music (record label). Coming to you now with a passion,
+            lots of experience under my belt, ready to build something cool.
           </p>
 
           {/* <!-- All Education --> */}
