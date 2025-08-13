@@ -1,40 +1,29 @@
 import React from "react";
 
 export default function Work() {
-  const github = require("../../../assets/images/social-icons/github_icon.png");
-  const githubHover = require("../../../assets/images/social-icons/github_hover.png");
-
   return (
     <div id="work-entry-page">
-      <section className="work-grid">
-        <article className="work7">
-          <div className="label">
-            <a
-              href="https://github.com/djdyer/code-quiz"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                alt="Git Hub Icon"
-                className="git_link default"
-                src={github}
-              />
-              <img
-                alt="Git Hub Icon Hover"
-                className="git_link hover"
-                src={githubHover}
-              />
-            </a>
-            <a
-              href="https://djdyer.github.io/code-quiz/"
-              target="_blank"
-              rel="noreferrer"
-              alt="Code Quiz"
-            >
-              <h3>CODE QUIZ</h3>
-            </a>
+      <section>
+        <div>
+          <img
+            className="deck"
+            src="https://res.cloudinary.com/dqun9lxh3/image/upload/v1755110911/code_quiz_xbdze6.jpg"
+            alt="Code Quiz"
+          />
+
+          <div className="video">
+            <iframe
+              width="1120"
+              height="630"
+              src="https://www.youtube.com/embed/cl9FFxNyA3o?si=ebgC44TKt3Wy83wG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-        </article>
+        </div>
       </section>
     </div>
   );

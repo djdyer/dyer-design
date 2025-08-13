@@ -164,7 +164,7 @@ export default function Work() {
           </div>
         </Link>
 
-        <Link to="/work/response-media" className="cursor-pointer">
+        <Link to="/work/poke-go" className="cursor-pointer">
           <div className="work6 work-entry">
             <div className="label">
               <a
