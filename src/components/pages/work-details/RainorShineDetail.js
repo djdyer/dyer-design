@@ -15,6 +15,7 @@ export default function Work() {
             src="https://res.cloudinary.com/dqun9lxh3/image/upload/v1755111926/rain-or-shine_night_owdibs.png"
             alt="Rain or Shine"
           />
+          <div className="video"></div>
         </div>
       </section>
     </div>

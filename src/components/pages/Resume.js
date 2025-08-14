@@ -205,16 +205,16 @@ export default function Resume() {
                 <ul>
                   <li>
                     Impassioned director of established record label featuring
-                    music catalogs available in both digital and physical
-                    formats.
+                    music catalogs available in both digital and
+                    physical&nbsp;formats.
                   </li>
                   <li>
                     Established web presence across key platforms, coupled with
-                    a comprehensive rebranding initiative.
+                    a comprehensive rebranding&nbsp;initiative.
                   </li>
                   <li>
                     Launched partnership with Triple Vision Record
-                    Distribution--Rotterdam, to break into European market.
+                    Distribution--Rotterdam, to break into European&nbsp;market.
                   </li>
                 </ul>
               </div>

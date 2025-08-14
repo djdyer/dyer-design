@@ -348,9 +348,9 @@ button {
 h2 {
   font-family: tungsten, sans-serif;
   letter-spacing: 3px;
-  font-size: 21pt;
-  line-height: 21pt;
-  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bolder;
   color: var(--dark);
   margin-bottom: 8px;
   margin-top: 0px;
@@ -364,8 +364,8 @@ h4 {
 
 .logos {
   margin: 0px;
-  height: 85px;
-  width: auto;
+  width: 85px;
+  height: auto;
 }
 
 li,
@@ -498,11 +498,6 @@ td:hover {
 
 #profile-content h1 {
   margin-top: 40px;
-}
-
-.school-degree h2 {
-  font-size: 22px;
-  line-height: 22px;
 }
 
 p {
@@ -738,7 +733,7 @@ p.error-text {
   }
 
   .logos {
-    height: 70px;
+    width: 70px;
   }
 
   #logolockup {
@@ -755,6 +750,12 @@ p.error-text {
     line-height: 24px;
     margin: 10px;
   }
+
+  h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
   #name2 {
     margin-top: -20px;
   }
@@ -764,7 +765,6 @@ p.error-text {
     line-height: 34px;
   }
 
-  h2,
   #tableheader th {
     font-size: 20px;
     line-height: 20px;
@@ -773,7 +773,8 @@ p.error-text {
 
   li,
   ul,
-  h5 {
+  h5,
+  td {
     font-size: 12px;
   }
 
@@ -835,5 +836,12 @@ p.error-text {
 
   .education-header {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logos {
+    width: 50px;
+    max-height: auto;
   }
 }
